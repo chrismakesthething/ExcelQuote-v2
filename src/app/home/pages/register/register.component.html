@@ -1,0 +1,11 @@
+<p>Please sign up</p>
+<form #registerDetails>
+    <label for="username">email
+        <input type="email" id="username" name="email" [(ngModel)]="model.email">
+    </label>
+    <label for="password">Password
+        <input type="text" id="password" name="password" [(ngModel)]="model.password">
+    </label>
+    <button role="button" (click)="signUp(registerDetails)">Sign up</button>
+</form>
+<button role="button" [routerLink]="['/login']">Go back</button>
