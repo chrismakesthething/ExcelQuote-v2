@@ -1,18 +1,19 @@
-
 <div class="loginContainer">
-    <p>Please log in</p>
+  <p>Please log in</p>
     <form #loginDetails>
-        <div class="form-item">
-            <label class="label" for="username">email
-                <input class="input" type="email" id="username" name="email" [(ngModel)]="model.email">
-            </label>
-        </div>
-        <div class="form-item">
-            <label class="label" for="password">password
-                <input class="input" type="text" type="password" id="password" name="password" [(ngModel)]="model.password">
-            </label>
-        </div>
-        <button class="btn" role="button" (click)="emailLogin(loginDetails)">Login</button>
-    </form>
-    <button class="btn" role="button" [routerLink]="['/register']">Sign up</button>
+      <div class="form-item">
+        <label class="label" for="username">E-mail address
+          <input class="input" type="email" id="username" name="email" [(ngModel)]="model.email">
+        </label>
+      </div>
+      <div class="form-item">
+        <label class="label" for="password">Password
+          <input class="input" type="text" type="password" id="password" name="password" [(ngModel)]="model.password">
+        </label>
+      </div>
+      <div class="form-footer">
+        <button class="btn-lg input-fix" role="button" (click)="emailLogin(loginDetails)">Login</button>
+        <button class="btn-lg" role="button" [routerLink]="['/register']">Sign up</button>
+      </div>
+  </form>
 </div>

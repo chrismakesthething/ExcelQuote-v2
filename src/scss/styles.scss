@@ -4,12 +4,17 @@
 @import "./utilities";
 @import "./functions";
 @import "./animations";
+@import "./buttons";
+
 @import "./pages/main";
-@import "./pages/logsign";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 
 body {
   display: flex;
   overflow-y: hidden;
   box-sizing: border-box;
   background-color: $primary-secondary;
+  font-family: 'Open Sans',
+  sans-serif;
 }
