@@ -13,7 +13,8 @@ export class RegisterComponent implements OnInit {
 
     model: object = {
         email: null,
-        password: null
+        password: null,
+        displayName: null
     };
 
     ngOnInit() {
@@ -27,9 +28,9 @@ export class RegisterComponent implements OnInit {
                 credentials.push(val)
             }
         });
-        this.Auth.emailSignUp(credentials[0], credentials[1])
+        this.Auth.emailSignUp(credentials[0], credentials[1], credentials[2])
             .then(() => {
-                this.Route.navigate(['login'])
+                this.Route.navigate(['dashboard'])
             })
             .catch((err) => {
                 console.log(err)
