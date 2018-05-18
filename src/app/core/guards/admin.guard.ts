@@ -7,12 +7,13 @@ import { AngularFireAuth } from 'angularfire2/auth';
 @Injectable(
     // providedIn: 'root'
 )
-export class AuthGuard implements CanActivate {
+export class AdminGuard implements CanActivate {
 
     constructor(private Auth: AuthService, private Router: Router, private afAuth: AngularFireAuth){}
 
     canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
         
-        return this.Auth.checkUserState().then(res => { return res })
+        return this.Auth.currentUserRole;
+        // checkUserState().then(res => { return res })
     }
 }

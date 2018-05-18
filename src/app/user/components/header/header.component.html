@@ -1,0 +1,79 @@
+<style>
+    nav {
+        position: relative;
+        background-color: purple;
+        min-height: 55px;
+    }
+
+    .page-title {
+        position: absolute;
+        /* width: 100%; */
+        padding: 0;
+        margin: 0;
+        font-size: 1.5rem;
+        /* text-align: center; */
+        color: #fff;
+        text-transform: uppercase;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 300;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav-btn {
+        position: absolute;
+        top: 0;
+        border: none;
+        background-color: transparent;
+        padding: 20px;
+        outline: none;
+        color: #fff;
+    }
+
+    .nav-btn:hover {
+        color: #aaa;
+        cursor: pointer;
+    }
+
+    .logout {
+        right: 0;
+    }
+
+    .nav-btn.menu-trigger {
+        padding: 15px 20px;
+        height: 100%;
+    }
+
+    .menu-trigger {
+        left: 0;
+    }
+
+    .menu-trigger span,
+    .menu-trigger span:before,
+    .menu-trigger span:after {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: #fff;
+    }
+    
+    .menu-trigger span:before {
+        content: ' ';
+        top: 10px;
+    }
+
+    .menu-trigger span:after {
+        content: ' ';
+        top: -12px;
+    }
+</style>
+<nav>
+    <div class="nav-wrapper">
+        <!-- <button class="nav-btn menu-trigger" role="button" (click)="toggleState()"><span></span></button> -->
+        <h4 class="page-title">{{title}}</h4>
+        <button class="nav-btn logout" role="button" (click)="logout()">Logout</button>
+    </div>
+    <!-- <div class="menu-wrapper"></div> -->
+</nav>
