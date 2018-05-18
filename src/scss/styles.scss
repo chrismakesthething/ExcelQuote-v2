@@ -4,3 +4,12 @@
 @import "./utilities";
 @import "./functions";
 @import "./animations";
+@import "./pages/main";
+@import "./pages/logsign";
+
+body {
+  display: flex;
+  overflow-y: hidden;
+  box-sizing: border-box;
+  background-color: $primary-secondary;
+}

@@ -1,0 +1,32 @@
+.loginContainer {
+  width: 25rem;
+  @include Center;
+  p {
+    text-align: center;
+    height: 15vh
+  }
+  .form-wrapper {
+    font-size: 40px;
+    padding: 5px;
+    z-index: 100;
+  }
+}
+
+.btn {
+  width: 100%;
+  height: 3em;
+  padding: 0;
+  margin-bottom: 20px;
+  border:none;
+  color:$primary-secondary;
+  background-color:$white;
+  border-radius: 3px;
+}
+
+.input {
+  width: 100%;
+  height: 2em;
+  border: none;
+  border-bottom: 1px solid red;
+  margin-bottom: 4em;
+}
