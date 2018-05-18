@@ -1,36 +1,37 @@
 @import "../../../../scss/styles";
+// @import '~material-icons/iconfont/material-icons.scss';
+
 .loginContainer {
-  width: 21rem;
+  width: 23rem;
+  border: 1px solid red;
+  border-radius: 3px;
   @include Center;
   p {
     text-align: center;
     height: 15vh;
   }
   .form-footer {
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 }
 
 form {
-  margin-top: 3rem;
+  margin-top: 1rem;
   label {
     color: $white;
     input {
       color: $white;
       font-size: 1.5em;
       letter-spacing: 5px;
+        background-color: transparent;
+        width: 100%;
+        height: 1em;
+        border: none;
+        border-bottom: 1px solid $white;
+        margin-bottom: 4em;
       &:focus {
         outline: none;
       }
     }
   }
-}
-
-.input {
-  background-color: transparent;
-  width: 100%;
-  height: 2em;
-  border: none;
-  border-bottom: 1px solid $white;
-  margin-bottom: 4em;
 }
